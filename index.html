@@ -4,18 +4,285 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/site.js" defer></script>
-    <title>Document</title>
+    <script src="assets/js/script.js" defer></script>
+    <title>blibado</title>
 </head>
+
 <body>
 
+    <main>
+        <!-- HEADER  -->
+        <header>
+            <hgroup>
+                <h1><span class="blue">bli</span><span class="yellow">ba</span><span class="red">do</span><span
+                        class="copyrightLogo">&copy</span></h1>
+                <h2>Vi ved hvor du bor!</h2>
+            </hgroup>
+        </header>
 
-    
+        <!-- NAV  -->
+
+        <nav>
+            <ul>
+                <li><a href="#sectionOmOs">Om os</a></li>
+                <li><a href="#sectionLocations">Locations</a></li>
+                <li><a href="#sectionAktuelt">Aktuelt</a></li>
+                <li><a id="ModalOpenButton">SignUp</a></li>
+            </ul>
+        </nav>
+
+        <!-- MODAL  -->
+
+        <div class="modal modalStart" id="modal">
+            <div id="modalBackground"></div>
+            <form>
+                <fieldset>
+                    <legend>Simpel formValidering</legend>
+
+                    <label for="formName">Fornavn:</label>
+                    <input type="text" id="formName" name="formName">
+                    <label for="formLastname">Dit Efternavn:</label>
+                    <input type="text" id="formLastname" name="formLastname">
+                    <label for="formMail">Din Email:</label>
+                    <input type="email" id="formMail" name="formMail">
+                    <label for="formPassword">Password:</label>
+                    <input type="password" name="formPassword" id="formPassword">
+                    <label for="formPasswordRepeat">Gentag Password:</label>
+                    <input type="password" name="formPasswordRepeat" id="formPasswordRepeat">
+                    <button id="formSubmit">Send</button>
+                </fieldset>
+                <span class="material-symbols-outlined" id="modalCloseButton">
+                    close
+                </span>
+            </form>
+        </div>
+
+
+        <!-- SECTION OM OS -->
+
+        <section id="sectionOmOs">
+            <h3>Om os</h3>
+            <figure>
+                <video src="assets/images/Media/pexels-taryn-elliott-9583751 (720p).mp4" autoplay muted loop></video>
+                <figcaption>
+                    <article>
+                        <h4>Begyndelsen</h4>
+                        <p>BliBaDO begyndte i 2018 da to udviklere var værter for tre rejsende, der ledte efter et sted
+                            at
+                            bo. Nu har millioner af værter og gæster oprettet en gratis BliBaDo-konto.</p>
+                        <p>Uanset om det er en forretningsrejse, weekendtur, familieferie, eller et længere ophold, er
+                            der
+                            millioner af fantastiske steder at besøge.
+                        </p>
+                        <p>Vi arbejder med: Bekræftede personlige profiler samt en pålidelig platform til at opkræve og
+                            overføre betalinger.</p>
+                        <a href="javascript: void(0)">Læs mere:</a>
+                    </article>
+                </figcaption>
+            </figure>
+        </section>
+
+
+        <!-- SECTION LOCATIONS  -->
+
+        <section id="sectionLocations">
+            <h3>Locations</h3>
+            <div>
+                <figure>
+                    <img src="assets/images/GFX/Location-01-01.jpg" alt="Picture of the location">
+                    <figcaption>
+                        <article>
+                            <h4>Location One</h4>
+                            <h5>Antal Sovepladser:</h5>
+                            <p>Voksne: 2</p>
+                            <p>Børn: 3</p>
+                            <h5>Faciliteter:</h5>
+                            <p>Vask: Ja</p>
+                            <h5>Reservation:</h5>
+                            <p>Minimum reservation er 3 nætter for at kunne tilbyde længere ophold. Spørg venligst ikke
+                                om
+                                mindre.</p>
+                            <h5>Pris / Døgn:</h5>
+                            <p>Kr.: 600,-</p>
+                            <h5>Beskrivelse:</h5>
+                            <p>Lejligheden ligger i en gammel bygning med højt til loftet, masser af lys og en balkon,
+                                der
+                                vender lige mod syd, så du kan nyde solopgangen og solnedgangen med udsigt over havet og
+                                den
+                                lille havn.</p>
+                        </article>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="assets/images/GFX/Location-02-01.jpg" alt="Picture of the location">
+                    <figcaption>
+                        <article>
+                            <h4>Location Two</h4>
+                            <h5>Antal Sovepladser:</h5>
+                            <p>Voksne: 4</p>
+                            <p>Børn: 4</p>
+                            <h5>Faciliteter:</h5>
+                            <p>Vask: Nej</p>
+                            <h5>Reservation:</h5>
+                            <p>Minimum reservation er 2 nætter.</p>
+                            <h5>Pris / Døgn:</h5>
+                            <p>Kr.: 550,-</p>
+                            <h5>Beskrivelse:</h5>
+                            <p>Nyd udsigten fra den store balkon i en klassisk møbleret lejlighed. Du har adgang til: En
+                                entre
+                                med et toilet (mulighed for bruser), to store værelser eget badeværelse, godt køkken og
+                                to
+                                soveværelser.</p>
+                        </article>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="assets/images/GFX/Location-03-01.jpg" alt="Picture of the location">
+                    <figcaption>
+                        <article>
+                            <h4>Location Three</h4>
+                            <h5>Antal Sovepladser:</h5>
+                            <p>Voksne: 3</p>
+                            <p>Børn: 4</p>
+                            <h5>Faciliteter:</h5>
+                            <p>Vask: Nej</p>
+                            <h5>Reservation:</h5>
+                            <p>Minimum reservation er 5 nætter.</p>
+                            <h5>Pris / Døgn:</h5>
+                            <p>Kr.: 650,-</p>
+                            <h5>Beskrivelse:</h5>
+                            <p>62 kv/m lejlighed med en fantastisk udsigt og privat parkeringsplads mod et ekstra gebyr.
+                                Ti
+                                minutters gang til en shoppingmole Fisketorvet. Nyd solrige aftener på en balkon med en
+                                kold
+                                drink.</p>
+                        </article>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="assets/images/GFX/Location-04-01.jpg" alt="Picture of the location">
+                    <figcaption>
+                        <article>
+                            <h4>Location Four</h4>
+                            <h5>Antal Sovepladser:</h5>
+                            <p>Voksne: 2</p>
+                            <p>Børn: 3</p>
+                            <h5>Faciliteter:</h5>
+                            <p>Vask: Ja</p>
+                            <h5>Reservation:</h5>
+                            <p>Minimum reservation er 3 nætter for at kunne tilbyde længere ophold. Spørg venligst ikke
+                                om
+                                mindre.</p>
+                            <h5>Pris / Døgn:</h5>
+                            <p>Kr.: 600,-</p>
+                            <h5>Beskrivelse:</h5>
+                            <p>Bygning med højt til loftet, masser af lys og sydvendt balkon, så du kan nyde udsigten
+                                over
+                                den
+                                idylliske havn. Køkken og spisestue er veludrustet og forbundet med en dobbeltdør.</p>
+                        </article>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="assets/images/GFX/Location-05-01.jpeg" alt="Picture of the location">
+                    <figcaption>
+                        <article>
+                            <h4>Location Five</h4>
+                            <h5>Antal Sovepladser:</h5>
+                            <p>Voksne: 2</p>
+                            <p>Børn: 4</p>
+                            <h5>Faciliteter:</h5>
+                            <p>Vask: Ja</p>
+                            <h5>Reservation:</h5>
+                            <p>Minimum reservation er 2 nætter.
+                                mindre.</p>
+                            <h5>Pris / Døgn:</h5>
+                            <p>Kr.: 550,-</p>
+                            <h5>Beskrivelse:</h5>
+                            <p>Nyd udsigten over København fra den store balkon og slappe af i en rummelig klassisk
+                                møbleret
+                                lejlighed. Du har adgang til: En entre med et toilet, to store værelser, godt køkken og
+                                to
+                                soveværelser.</p>
+                        </article>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="assets/images/GFX/Location-06-01.jpg" alt="Picture of the location">
+                    <figcaption>
+                        <article>
+                            <h4>Location Six</h4>
+                            <h5>Antal Sovepladser:</h5>
+                            <p>Voksne: 2</p>
+                            <p>Børn: 4</p>
+                            <h5>Faciliteter:</h5>
+                            <p>Vask: nej</p>
+                            <h5>Reservation:</h5>
+                            <p>Minimum reservation er 6 nætter.</p>
+                            <h5>Pris / Døgn:</h5>
+                            <p>Kr.: 950,-</p>
+                            <h5>Beskrivelse:</h5>
+                            <p>LakeView Cabin er en traditionel træhytte, nyrenoveret i eksotisk stil. Direkte adgang
+                                til
+                                stranden, udendørs bruser og sauna. Perfekt til par, livsnydere og naturelskere.</p>
+                        </article>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- SECTION AKTUELT  -->
+
+        <section id="sectionAktuelt">
+            <h3>Aktuelt</h1>
+                <div>
+                    <img id="mainImage" src="assets/images/GFX/Location-06-01.jpg" alt="Choosen Image">
+                    <div>
+                        <img id="smallImageOne" src="assets/images/GFX/Location-06-01.jpg" alt="Choose">
+                        <img id="smallImageTwo" src="assets/images/GFX/Location-06-02.jpg" alt="Choose">
+                        <img id="smallImageThree" src="assets/images/GFX/Location-06-03.jpg" alt="Choose">
+                        <img id="smallImageFour" src="assets/images/GFX/Location-06-04.jpg" alt="Choose">
+                    </div>
+                </div>
+        </section>
+
+    </main>
+    <!-- FOOTER  -->
+
+    <footer>
+        <div>
+            <div>
+                <h4>Din lokation:</h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8680.651051522402!2d9.955661181935511!3d57.04875327708458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464932b69856edb3%3A0xe12d94d82c0b02c7!2sTECHCOLLEGE!5e0!3m2!1sda!2sdk!4v1719214925358!5m2!1sda!2sdk"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <h4>Informationer:</h4>
+                    </li>
+                    <li>Boulevarden 29, 9000 Aalborg</li>
+                    <li><span class="underline">3344 5566</span></li>
+                    <li><span class="underline">info@blibado.dk</span></li>
+                    <li>CVR: 5533 66 7788</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
 </body>
+
 </html>
